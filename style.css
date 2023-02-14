@@ -1,0 +1,142 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    display: grid;
+    grid-template-columns:20% 80%;
+    grid-template-areas: 
+        "header header"
+        "main main "
+        "aside1 aside2"
+        "footer footer";
+    gap: 1em;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav > ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.25s;
+}
+header{
+    grid-area: header;
+}
+main{
+    display: flex;
+    grid-area: main;
+    justify-content: space-around;
+
+}
+.aside1{
+    grid-area: aside1;
+}
+.aside2{
+    grid-area: aside2;
+}
+footer{
+    grid-area: footer;
+    background-color: #ffbe45;
+    padding: 2em;
+    text-align: center;
+}
+main > h1 {
+    font-size: 3.4em;
+    vertical-align: middle;
+}
+
+h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 1em;
+}
+
+
+body > header > nav > ul{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+body > header > nav > ul > li:hover {
+    background-color: #45f9ff
+}
+
+body > header > nav {
+    background-color: aquamarine;
+    padding-bottom: 10px;
+
+}    
+
+body > main > img{
+    display: flex;
+    width: 200px;
+}
+body > aside > img {
+    display: flex;
+    width: 200px; 
+    float: left;
+    padding: 10px;
+}
+body > aside > p {
+    text-align: left;
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 5px;
+}
+h2{
+    text-align: center;
+    font-size: 1.5em;
+}
+body > header > nav > ul > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    color: #333;
+    font-weight: bold;
+    transition: 0.25s;
+    
+}
+.moreopt{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.moreopt > li > a{
+    color: black;
+}
+.moreopt > li:hover{
+    background-color: rgb(158, 196, 201);
+
+}
+.button {
+    border: none;
+    color: rgb(3, 8, 9);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
